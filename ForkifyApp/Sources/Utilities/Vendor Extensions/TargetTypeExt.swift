@@ -14,12 +14,12 @@ extension TargetType {
 
     var headers: [String: String]? {
         [
-            "Content-Type": "application/json",
-            "client": "",
-            "uid": "",
-            "access-token": "",
-            "Accept": "application/json",
-            "lang": ""
+//            "Content-Type": "application/json",
+//            "client": "",
+//            "uid": "",
+//            "access-token": "",
+            "Accept": "application/json"
+//            "lang": ""
         ]
     }
 

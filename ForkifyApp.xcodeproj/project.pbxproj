@@ -28,6 +28,30 @@
 		BC267AAD2661167E004E2C08 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AAC2661167E004E2C08 /* Enviroment.swift */; };
 		BC267AB2266116AC004E2C08 /* PropertyListKeyValuePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */; };
 		BC267AB7266116E9004E2C08 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AB6266116E9004E2C08 /* FileReader.swift */; };
+		BC267AC326611848004E2C08 /* RecipesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC267AC226611848004E2C08 /* RecipesList.storyboard */; };
+		BC267ACD2661191D004E2C08 /* RecipesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267ACC2661191D004E2C08 /* RecipesListViewModel.swift */; };
+		BC267AD226611925004E2C08 /* RecipesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AD126611925004E2C08 /* RecipesListModel.swift */; };
+		BC267ADA26611945004E2C08 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AD926611945004E2C08 /* RecipesListViewController.swift */; };
+		BC267AEA266119F3004E2C08 /* RecipesListTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AE9266119F3004E2C08 /* RecipesListTarget.swift */; };
+		BC267AEF266119FE004E2C08 /* RecipesListApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AEE266119FE004E2C08 /* RecipesListApiClient.swift */; };
+		BC267AFA26611E3F004E2C08 /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AF926611E3F004E2C08 /* UITableViewExt.swift */; };
+		BC267B032661230B004E2C08 /* HandyUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC267B022661230B004E2C08 /* HandyUIKit */; };
+		BC267B08266123F6004E2C08 /* IndexPathExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B07266123F6004E2C08 /* IndexPathExt.swift */; };
+		BC267B0D26613119004E2C08 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B0C26613119004E2C08 /* Recipe.swift */; };
+		BC267B1326613562004E2C08 /* ScreenFlowsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B1226613562004E2C08 /* ScreenFlowsAppDelegate.swift */; };
+		BC267B1826613581004E2C08 /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B1726613581004E2C08 /* CompositeAppDelegate.swift */; };
+		BC267B1F26615746004E2C08 /* RecipesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B1D26615745004E2C08 /* RecipesListTableViewCell.swift */; };
+		BC267B2026615746004E2C08 /* RecipesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC267B1E26615745004E2C08 /* RecipesListTableViewCell.xib */; };
+		BC267B2926615942004E2C08 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BC267B2826615942004E2C08 /* SDWebImage */; };
+		BC267B2B26615942004E2C08 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC267B2A26615942004E2C08 /* SDWebImageMapKit */; };
+		BC267B3026615E3F004E2C08 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B2F26615E3F004E2C08 /* HTMLParser.swift */; };
+		BC267B3A26615E95004E2C08 /* Ji in Frameworks */ = {isa = PBXBuildFile; productRef = BC267B3926615E95004E2C08 /* Ji */; };
+		BC267B3F26615EE9004E2C08 /* JiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B3E26615EE9004E2C08 /* JiInterface.swift */; };
+		BC267B4626616173004E2C08 /* MealsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC267B4526616173004E2C08 /* MealsList.storyboard */; };
+		BC267B4B26616188004E2C08 /* MealsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B4A26616188004E2C08 /* MealsListViewController.swift */; };
+		BC267B5026616193004E2C08 /* MealsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B4F26616193004E2C08 /* MealsListViewModel.swift */; };
+		BC267B55266161A5004E2C08 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B54266161A5004E2C08 /* MealsModel.swift */; };
+		BC267B5B266173ED004E2C08 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BC267B5A266173ED004E2C08 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +96,25 @@
 		BC267AAC2661167E004E2C08 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListKeyValuePair.swift; sourceTree = "<group>"; };
 		BC267AB6266116E9004E2C08 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		BC267AC226611848004E2C08 /* RecipesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesList.storyboard; sourceTree = "<group>"; };
+		BC267ACC2661191D004E2C08 /* RecipesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewModel.swift; sourceTree = "<group>"; };
+		BC267AD126611925004E2C08 /* RecipesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListModel.swift; sourceTree = "<group>"; };
+		BC267AD926611945004E2C08 /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		BC267AE9266119F3004E2C08 /* RecipesListTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListTarget.swift; sourceTree = "<group>"; };
+		BC267AEE266119FE004E2C08 /* RecipesListApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListApiClient.swift; sourceTree = "<group>"; };
+		BC267AF926611E3F004E2C08 /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
+		BC267B07266123F6004E2C08 /* IndexPathExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPathExt.swift; sourceTree = "<group>"; };
+		BC267B0C26613119004E2C08 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BC267B1226613562004E2C08 /* ScreenFlowsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFlowsAppDelegate.swift; sourceTree = "<group>"; };
+		BC267B1726613581004E2C08 /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
+		BC267B1D26615745004E2C08 /* RecipesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListTableViewCell.swift; sourceTree = "<group>"; };
+		BC267B1E26615745004E2C08 /* RecipesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesListTableViewCell.xib; sourceTree = "<group>"; };
+		BC267B2F26615E3F004E2C08 /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		BC267B3E26615EE9004E2C08 /* JiInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiInterface.swift; sourceTree = "<group>"; };
+		BC267B4526616173004E2C08 /* MealsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MealsList.storyboard; sourceTree = "<group>"; };
+		BC267B4A26616188004E2C08 /* MealsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListViewController.swift; sourceTree = "<group>"; };
+		BC267B4F26616193004E2C08 /* MealsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListViewModel.swift; sourceTree = "<group>"; };
+		BC267B54266161A5004E2C08 /* MealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +122,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC267B3A26615E95004E2C08 /* Ji in Frameworks */,
+				BC267B032661230B004E2C08 /* HandyUIKit in Frameworks */,
 				BC267A5E2660F506004E2C08 /* RxMoya in Frameworks */,
 				BC267A5A2660F506004E2C08 /* Moya in Frameworks */,
+				BC267B5B266173ED004E2C08 /* Kingfisher in Frameworks */,
 				BC267A5C2660F506004E2C08 /* ReactiveMoya in Frameworks */,
+				BC267B2B26615942004E2C08 /* SDWebImageMapKit in Frameworks */,
+				BC267B2926615942004E2C08 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +203,8 @@
 		BC267A622660F675004E2C08 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				BC267B1126613542004E2C08 /* AppDelegates */,
 				BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */,
-				BC267A222660F2C0004E2C08 /* AppDelegate.swift */,
 				BC267AAC2661167E004E2C08 /* Enviroment.swift */,
 				BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */,
 			);
@@ -174,6 +222,8 @@
 		BC267A642660F6A3004E2C08 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BC267B4426616157004E2C08 /* Meals List */,
+				BC267AC126611800004E2C08 /* Recipes list */,
 				BC267A262660F2C0004E2C08 /* ViewController.swift */,
 				BC267A282660F2C0004E2C08 /* Main.storyboard */,
 				BC267A302660F2C2004E2C08 /* LaunchScreen.storyboard */,
@@ -184,6 +234,7 @@
 		BC267A6526610FB8004E2C08 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BC267AF326611A28004E2C08 /* Data services */,
 				BC267A7C26611389004E2C08 /* Utilities */,
 				BC267A6626610FC0004E2C08 /* Models */,
 				BC267A6826611244004E2C08 /* ModelDecodable.swift */,
@@ -197,6 +248,7 @@
 				BC267A6D2661128B004E2C08 /* ErrorModel.swift */,
 				BC267A72266112BA004E2C08 /* Result.swift */,
 				BC267A77266112E2004E2C08 /* ForkifyError.swift */,
+				BC267B0C26613119004E2C08 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,11 +256,10 @@
 		BC267A7C26611389004E2C08 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BC267B3426615E54004E2C08 /* General Utilities */,
+				BC267AF726611E26004E2C08 /* UIKit Extensions */,
 				BC267A8B26611425004E2C08 /* Vendor Extensions */,
 				BC267A8A26611419004E2C08 /* Foundation Extensions */,
-				BC267A7D26611399004E2C08 /* JSONEncoderExt.swift */,
-				BC267A85266113D9004E2C08 /* JSONDecoderExt.swift */,
-				BC267AB6266116E9004E2C08 /* FileReader.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -216,6 +267,8 @@
 		BC267A8A26611419004E2C08 /* Foundation Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BC267A7D26611399004E2C08 /* JSONEncoderExt.swift */,
+				BC267A85266113D9004E2C08 /* JSONDecoderExt.swift */,
 			);
 			path = "Foundation Extensions";
 			sourceTree = "<group>";
@@ -226,6 +279,92 @@
 				BC267A8C26611437004E2C08 /* TargetTypeExt.swift */,
 			);
 			path = "Vendor Extensions";
+			sourceTree = "<group>";
+		};
+		BC267AC126611800004E2C08 /* Recipes list */ = {
+			isa = PBXGroup;
+			children = (
+				BC267B1C26615724004E2C08 /* Cells */,
+				BC267AC226611848004E2C08 /* RecipesList.storyboard */,
+				BC267AD926611945004E2C08 /* RecipesListViewController.swift */,
+				BC267ACC2661191D004E2C08 /* RecipesListViewModel.swift */,
+				BC267AD126611925004E2C08 /* RecipesListModel.swift */,
+			);
+			path = "Recipes list";
+			sourceTree = "<group>";
+		};
+		BC267AE7266119E1004E2C08 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC267AE8266119E6004E2C08 /* RecipesList */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BC267AE8266119E6004E2C08 /* RecipesList */ = {
+			isa = PBXGroup;
+			children = (
+				BC267AEE266119FE004E2C08 /* RecipesListApiClient.swift */,
+				BC267AE9266119F3004E2C08 /* RecipesListTarget.swift */,
+			);
+			path = RecipesList;
+			sourceTree = "<group>";
+		};
+		BC267AF326611A28004E2C08 /* Data services */ = {
+			isa = PBXGroup;
+			children = (
+				BC267AE7266119E1004E2C08 /* Networking */,
+			);
+			path = "Data services";
+			sourceTree = "<group>";
+		};
+		BC267AF726611E26004E2C08 /* UIKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC267AF926611E3F004E2C08 /* UITableViewExt.swift */,
+				BC267B07266123F6004E2C08 /* IndexPathExt.swift */,
+			);
+			path = "UIKit Extensions";
+			sourceTree = "<group>";
+		};
+		BC267B1126613542004E2C08 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A222660F2C0004E2C08 /* AppDelegate.swift */,
+				BC267B1226613562004E2C08 /* ScreenFlowsAppDelegate.swift */,
+				BC267B1726613581004E2C08 /* CompositeAppDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		BC267B1C26615724004E2C08 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC267B1D26615745004E2C08 /* RecipesListTableViewCell.swift */,
+				BC267B1E26615745004E2C08 /* RecipesListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC267B3426615E54004E2C08 /* General Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC267B2F26615E3F004E2C08 /* HTMLParser.swift */,
+				BC267B3E26615EE9004E2C08 /* JiInterface.swift */,
+				BC267AB6266116E9004E2C08 /* FileReader.swift */,
+			);
+			path = "General Utilities";
+			sourceTree = "<group>";
+		};
+		BC267B4426616157004E2C08 /* Meals List */ = {
+			isa = PBXGroup;
+			children = (
+				BC267B4526616173004E2C08 /* MealsList.storyboard */,
+				BC267B4A26616188004E2C08 /* MealsListViewController.swift */,
+				BC267B4F26616193004E2C08 /* MealsListViewModel.swift */,
+				BC267B54266161A5004E2C08 /* MealsModel.swift */,
+			);
+			path = "Meals List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +387,11 @@
 				BC267A592660F506004E2C08 /* Moya */,
 				BC267A5B2660F506004E2C08 /* ReactiveMoya */,
 				BC267A5D2660F506004E2C08 /* RxMoya */,
+				BC267B022661230B004E2C08 /* HandyUIKit */,
+				BC267B2826615942004E2C08 /* SDWebImage */,
+				BC267B2A26615942004E2C08 /* SDWebImageMapKit */,
+				BC267B3926615E95004E2C08 /* Ji */,
+				BC267B5A266173ED004E2C08 /* Kingfisher */,
 			);
 			productName = ForkifyApp;
 			productReference = BC267A1F2660F2C0004E2C08 /* ForkifyApp.app */;
@@ -322,6 +466,10 @@
 			mainGroup = BC267A162660F2C0004E2C08;
 			packageReferences = (
 				BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */,
+				BC267B012661230B004E2C08 /* XCRemoteSwiftPackageReference "HandyUIKit" */,
+				BC267B2726615942004E2C08 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				BC267B3826615E95004E2C08 /* XCRemoteSwiftPackageReference "Ji" */,
+				BC267B59266173ED004E2C08 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BC267A202660F2C0004E2C08 /* Products */;
 			projectDirPath = "";
@@ -339,7 +487,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC267AC326611848004E2C08 /* RecipesList.storyboard in Resources */,
 				BC267A322660F2C2004E2C08 /* LaunchScreen.storyboard in Resources */,
+				BC267B2026615746004E2C08 /* RecipesListTableViewCell.xib in Resources */,
+				BC267B4626616173004E2C08 /* MealsList.storyboard in Resources */,
 				BC267A2F2660F2C2004E2C08 /* Assets.xcassets in Resources */,
 				BC267A2A2660F2C0004E2C08 /* Main.storyboard in Resources */,
 			);
@@ -366,19 +517,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC267B55266161A5004E2C08 /* MealsModel.swift in Sources */,
+				BC267ADA26611945004E2C08 /* RecipesListViewController.swift in Sources */,
+				BC267AEF266119FE004E2C08 /* RecipesListApiClient.swift in Sources */,
 				BC267A7E26611399004E2C08 /* JSONEncoderExt.swift in Sources */,
+				BC267B1F26615746004E2C08 /* RecipesListTableViewCell.swift in Sources */,
+				BC267B3026615E3F004E2C08 /* HTMLParser.swift in Sources */,
 				BC267A6E2661128B004E2C08 /* ErrorModel.swift in Sources */,
 				BC267A78266112E3004E2C08 /* ForkifyError.swift in Sources */,
 				BC267AB7266116E9004E2C08 /* FileReader.swift in Sources */,
+				BC267B1826613581004E2C08 /* CompositeAppDelegate.swift in Sources */,
+				BC267AFA26611E3F004E2C08 /* UITableViewExt.swift in Sources */,
 				BC267A272660F2C0004E2C08 /* ViewController.swift in Sources */,
+				BC267B4B26616188004E2C08 /* MealsListViewController.swift in Sources */,
 				BC267A232660F2C0004E2C08 /* AppDelegate.swift in Sources */,
+				BC267B0D26613119004E2C08 /* Recipe.swift in Sources */,
 				BC267A2D2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld in Sources */,
+				BC267B3F26615EE9004E2C08 /* JiInterface.swift in Sources */,
 				BC267A73266112BA004E2C08 /* Result.swift in Sources */,
+				BC267AD226611925004E2C08 /* RecipesListModel.swift in Sources */,
+				BC267AEA266119F3004E2C08 /* RecipesListTarget.swift in Sources */,
 				BC267A86266113D9004E2C08 /* JSONDecoderExt.swift in Sources */,
 				BC267AB2266116AC004E2C08 /* PropertyListKeyValuePair.swift in Sources */,
+				BC267B5026616193004E2C08 /* MealsListViewModel.swift in Sources */,
+				BC267B1326613562004E2C08 /* ScreenFlowsAppDelegate.swift in Sources */,
 				BC267A6926611244004E2C08 /* ModelDecodable.swift in Sources */,
+				BC267ACD2661191D004E2C08 /* RecipesListViewModel.swift in Sources */,
 				BC267A8D26611437004E2C08 /* TargetTypeExt.swift in Sources */,
 				BC267AAD2661167E004E2C08 /* Enviroment.swift in Sources */,
+				BC267B08266123F6004E2C08 /* IndexPathExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,6 +888,38 @@
 				minimumVersion = 14.0.1;
 			};
 		};
+		BC267B012661230B004E2C08 /* XCRemoteSwiftPackageReference "HandyUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flinesoft/HandyUIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+		BC267B2726615942004E2C08 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		BC267B3826615E95004E2C08 /* XCRemoteSwiftPackageReference "Ji" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/honghaoz/Ji.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		BC267B59266173ED004E2C08 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -738,6 +937,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		BC267B022661230B004E2C08 /* HandyUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267B012661230B004E2C08 /* XCRemoteSwiftPackageReference "HandyUIKit" */;
+			productName = HandyUIKit;
+		};
+		BC267B2826615942004E2C08 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267B2726615942004E2C08 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		BC267B2A26615942004E2C08 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267B2726615942004E2C08 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		BC267B3926615E95004E2C08 /* Ji */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267B3826615E95004E2C08 /* XCRemoteSwiftPackageReference "Ji" */;
+			productName = Ji;
+		};
+		BC267B5A266173ED004E2C08 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267B59266173ED004E2C08 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 

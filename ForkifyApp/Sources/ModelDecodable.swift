@@ -38,6 +38,7 @@ extension ModelDecodable {
             let decodedData = try JSONDecoder.default.decode(modelType, from: data)
             return (decodedData, nil)
         } catch {
+            print(error)
             return (nil, "Something went wrong while decoding the data")
         }
     }
