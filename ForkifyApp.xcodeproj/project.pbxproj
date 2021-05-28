@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BC267A232660F2C0004E2C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A222660F2C0004E2C08 /* AppDelegate.swift */; };
-		BC267A252660F2C0004E2C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A242660F2C0004E2C08 /* SceneDelegate.swift */; };
 		BC267A272660F2C0004E2C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A262660F2C0004E2C08 /* ViewController.swift */; };
 		BC267A2A2660F2C0004E2C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC267A282660F2C0004E2C08 /* Main.storyboard */; };
 		BC267A2D2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */; };
@@ -16,6 +15,19 @@
 		BC267A322660F2C2004E2C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC267A302660F2C2004E2C08 /* LaunchScreen.storyboard */; };
 		BC267A3D2660F2C2004E2C08 /* ForkifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A3C2660F2C2004E2C08 /* ForkifyAppTests.swift */; };
 		BC267A482660F2C2004E2C08 /* ForkifyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A472660F2C2004E2C08 /* ForkifyAppUITests.swift */; };
+		BC267A5A2660F506004E2C08 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = BC267A592660F506004E2C08 /* Moya */; };
+		BC267A5C2660F506004E2C08 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BC267A5B2660F506004E2C08 /* ReactiveMoya */; };
+		BC267A5E2660F506004E2C08 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BC267A5D2660F506004E2C08 /* RxMoya */; };
+		BC267A6926611244004E2C08 /* ModelDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A6826611244004E2C08 /* ModelDecodable.swift */; };
+		BC267A6E2661128B004E2C08 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A6D2661128B004E2C08 /* ErrorModel.swift */; };
+		BC267A73266112BA004E2C08 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A72266112BA004E2C08 /* Result.swift */; };
+		BC267A78266112E3004E2C08 /* ForkifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A77266112E2004E2C08 /* ForkifyError.swift */; };
+		BC267A7E26611399004E2C08 /* JSONEncoderExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A7D26611399004E2C08 /* JSONEncoderExt.swift */; };
+		BC267A86266113D9004E2C08 /* JSONDecoderExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A85266113D9004E2C08 /* JSONDecoderExt.swift */; };
+		BC267A8D26611437004E2C08 /* TargetTypeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267A8C26611437004E2C08 /* TargetTypeExt.swift */; };
+		BC267AAD2661167E004E2C08 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AAC2661167E004E2C08 /* Enviroment.swift */; };
+		BC267AB2266116AC004E2C08 /* PropertyListKeyValuePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */; };
+		BC267AB7266116E9004E2C08 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267AB6266116E9004E2C08 /* FileReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +50,6 @@
 /* Begin PBXFileReference section */
 		BC267A1F2660F2C0004E2C08 /* ForkifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForkifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC267A222660F2C0004E2C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC267A242660F2C0004E2C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC267A262660F2C0004E2C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC267A292660F2C0004E2C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC267A2C2660F2C0004E2C08 /* ForkifyApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForkifyApp.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +62,16 @@
 		BC267A432660F2C2004E2C08 /* ForkifyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForkifyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC267A472660F2C2004E2C08 /* ForkifyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyAppUITests.swift; sourceTree = "<group>"; };
 		BC267A492660F2C2004E2C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC267A6826611244004E2C08 /* ModelDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDecodable.swift; sourceTree = "<group>"; };
+		BC267A6D2661128B004E2C08 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		BC267A72266112BA004E2C08 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BC267A77266112E2004E2C08 /* ForkifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkifyError.swift; sourceTree = "<group>"; };
+		BC267A7D26611399004E2C08 /* JSONEncoderExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoderExt.swift; sourceTree = "<group>"; };
+		BC267A85266113D9004E2C08 /* JSONDecoderExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExt.swift; sourceTree = "<group>"; };
+		BC267A8C26611437004E2C08 /* TargetTypeExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTypeExt.swift; sourceTree = "<group>"; };
+		BC267AAC2661167E004E2C08 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListKeyValuePair.swift; sourceTree = "<group>"; };
+		BC267AB6266116E9004E2C08 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC267A5E2660F506004E2C08 /* RxMoya in Frameworks */,
+				BC267A5A2660F506004E2C08 /* Moya in Frameworks */,
+				BC267A5C2660F506004E2C08 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +125,11 @@
 		BC267A212660F2C0004E2C08 /* ForkifyApp */ = {
 			isa = PBXGroup;
 			children = (
-				BC267A222660F2C0004E2C08 /* AppDelegate.swift */,
-				BC267A242660F2C0004E2C08 /* SceneDelegate.swift */,
-				BC267A262660F2C0004E2C08 /* ViewController.swift */,
-				BC267A282660F2C0004E2C08 /* Main.storyboard */,
-				BC267A2E2660F2C2004E2C08 /* Assets.xcassets */,
-				BC267A302660F2C2004E2C08 /* LaunchScreen.storyboard */,
 				BC267A332660F2C2004E2C08 /* Info.plist */,
-				BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */,
+				BC267A6526610FB8004E2C08 /* Sources */,
+				BC267A642660F6A3004E2C08 /* Scenes */,
+				BC267A632660F68B004E2C08 /* Resources */,
+				BC267A622660F675004E2C08 /* Supporting files */,
 			);
 			path = ForkifyApp;
 			sourceTree = "<group>";
@@ -131,6 +152,82 @@
 			path = ForkifyAppUITests;
 			sourceTree = "<group>";
 		};
+		BC267A622660F675004E2C08 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */,
+				BC267A222660F2C0004E2C08 /* AppDelegate.swift */,
+				BC267AAC2661167E004E2C08 /* Enviroment.swift */,
+				BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		BC267A632660F68B004E2C08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A2E2660F2C2004E2C08 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC267A642660F6A3004E2C08 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A262660F2C0004E2C08 /* ViewController.swift */,
+				BC267A282660F2C0004E2C08 /* Main.storyboard */,
+				BC267A302660F2C2004E2C08 /* LaunchScreen.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BC267A6526610FB8004E2C08 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A7C26611389004E2C08 /* Utilities */,
+				BC267A6626610FC0004E2C08 /* Models */,
+				BC267A6826611244004E2C08 /* ModelDecodable.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BC267A6626610FC0004E2C08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A6D2661128B004E2C08 /* ErrorModel.swift */,
+				BC267A72266112BA004E2C08 /* Result.swift */,
+				BC267A77266112E2004E2C08 /* ForkifyError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC267A7C26611389004E2C08 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A8B26611425004E2C08 /* Vendor Extensions */,
+				BC267A8A26611419004E2C08 /* Foundation Extensions */,
+				BC267A7D26611399004E2C08 /* JSONEncoderExt.swift */,
+				BC267A85266113D9004E2C08 /* JSONDecoderExt.swift */,
+				BC267AB6266116E9004E2C08 /* FileReader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BC267A8A26611419004E2C08 /* Foundation Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Foundation Extensions";
+			sourceTree = "<group>";
+		};
+		BC267A8B26611425004E2C08 /* Vendor Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A8C26611437004E2C08 /* TargetTypeExt.swift */,
+			);
+			path = "Vendor Extensions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +244,11 @@
 			dependencies = (
 			);
 			name = ForkifyApp;
+			packageProductDependencies = (
+				BC267A592660F506004E2C08 /* Moya */,
+				BC267A5B2660F506004E2C08 /* ReactiveMoya */,
+				BC267A5D2660F506004E2C08 /* RxMoya */,
+			);
 			productName = ForkifyApp;
 			productReference = BC267A1F2660F2C0004E2C08 /* ForkifyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +320,9 @@
 				Base,
 			);
 			mainGroup = BC267A162660F2C0004E2C08;
+			packageReferences = (
+				BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = BC267A202660F2C0004E2C08 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,10 +366,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC267A7E26611399004E2C08 /* JSONEncoderExt.swift in Sources */,
+				BC267A6E2661128B004E2C08 /* ErrorModel.swift in Sources */,
+				BC267A78266112E3004E2C08 /* ForkifyError.swift in Sources */,
+				BC267AB7266116E9004E2C08 /* FileReader.swift in Sources */,
 				BC267A272660F2C0004E2C08 /* ViewController.swift in Sources */,
 				BC267A232660F2C0004E2C08 /* AppDelegate.swift in Sources */,
 				BC267A2D2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld in Sources */,
-				BC267A252660F2C0004E2C08 /* SceneDelegate.swift in Sources */,
+				BC267A73266112BA004E2C08 /* Result.swift in Sources */,
+				BC267A86266113D9004E2C08 /* JSONDecoderExt.swift in Sources */,
+				BC267AB2266116AC004E2C08 /* PropertyListKeyValuePair.swift in Sources */,
+				BC267A6926611244004E2C08 /* ModelDecodable.swift in Sources */,
+				BC267A8D26611437004E2C08 /* TargetTypeExt.swift in Sources */,
+				BC267AAD2661167E004E2C08 /* Enviroment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -597,6 +711,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC267A592660F506004E2C08 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		BC267A5B2660F506004E2C08 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		BC267A5D2660F506004E2C08 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC267A582660F506004E2C08 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */ = {
