@@ -1,5 +1,5 @@
 //
-//  RecipesModel.swift
+//  RecipeModel.swift
 //  ForkifyApp
 //
 //  Created by Adham on 28/05/2021.
@@ -7,14 +7,14 @@
 
 import Foundation
 
-class RecipesListModel: ModelDecodable {
+class RecipeDetailsModel: ModelDecodable {
     private let apiClient = RecipesListApiClient()
 
-    func fetchRecipes(query: String?, completionHandler: @escaping (Result) -> Void) {
-        apiClient.fetchRecipes(query: query) { response, error in
+    func fetchRecipeDetails(recipeId: Int?, completionHandler: @escaping (Result) -> Void) {
+        apiClient.fetchRecipeDetails(recipeId: recipeId) { response, error in
             if let response = response {
                 if response.statusCode < 300 {
-                    self.decode(modelType: Recipe.self, from: response) { result in
+                    self.decode(modelType: RecipeDetails.self, from: response) { result in
                         completionHandler(result)
                     }
                 } else {
@@ -26,4 +26,3 @@ class RecipesListModel: ModelDecodable {
         }
     }
 }
-

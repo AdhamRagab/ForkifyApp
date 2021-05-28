@@ -21,5 +21,17 @@ class RecipesListApiClient {
             }
         }
     }
+
+    func fetchRecipeDetails(recipeId: Int?, completionHandler: @escaping (Response?, String?) -> Void) {
+        guard let recipeId = recipeId else { return }
+        recipesListProvider.request(.fetchRecipeDetails(recipeId: recipeId)) { result in
+            switch result {
+            case .success(let response):
+                completionHandler(response, nil)
+            case .failure:
+                completionHandler(nil, "")
+            }
+        }
+    }
 }
 

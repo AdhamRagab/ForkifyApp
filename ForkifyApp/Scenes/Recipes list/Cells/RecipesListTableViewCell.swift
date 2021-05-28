@@ -26,11 +26,8 @@ class RecipesListTableViewCell: UITableViewCell {
     }
 
     func configureView(recipeModel: RecipeListItemModel?) {
-        guard let imageLink = recipeModel?.recipeImageLink?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
-        let securedImageLink = imageLink.replacingOccurrences(of: "http", with: "https")
-        recipeImage.kf.setImage(with: URL(string: securedImageLink))
+        recipeImage.kf.setImage(with: URL(string: recipeModel?.recipeImageLink?.configuredImageLink ?? ""))
         recipeTitleLabel.text = recipeModel?.recipeTitle ?? ""
         recipePublisherNameLabel.text = recipeModel?.recipePublisherName ?? ""
     }
-
 }

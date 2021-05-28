@@ -11,7 +11,7 @@ class MealsListViewController: UIViewController {
     @IBOutlet private var mealsTableView: UITableView!
     @IBOutlet private var searchBar: UISearchBar!
 
-    let viewModel = MealsListViewModel()
+    private let viewModel = MealsListViewModel()
     var query: String?
     
     override func viewDidLoad() {

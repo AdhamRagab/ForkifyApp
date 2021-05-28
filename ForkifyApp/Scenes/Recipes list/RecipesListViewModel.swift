@@ -23,6 +23,10 @@ class RecipesListViewModel {
         recipe?.count ?? 0
     }
 
+    func getRecipeId(atIndex index: Int) -> Int {
+        return Int(recipe?.recipes?[index].recipeId ?? "") ?? 0
+    }
+
     func getRecipeModel(atIndex index: Int) -> RecipeListItemModel? {
         guard let imageLink = recipe?.recipes?[index].imageUrl else { return RecipeListItemModel()}
         return RecipeListItemModel(

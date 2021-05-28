@@ -15,7 +15,7 @@ class RecipesListViewController: UIViewController {
 
     @IBOutlet private var recipesTableView: UITableView!
 
-    let viewModel = RecipesListViewModel()
+    private let viewModel = RecipesListViewModel()
     var mealQuery: String?
 
     override func viewDidLoad() {
@@ -24,6 +24,7 @@ class RecipesListViewController: UIViewController {
         recipesTableView.delegate = self
         recipesTableView.dataSource = self
         reloadTableView()
+        errorHandler()
         registerNib()
         viewModel.fetchRecipes(query: mealQuery)
     }
@@ -34,12 +35,28 @@ class RecipesListViewController: UIViewController {
         }
     }
 
+    private func errorHandler() {
+        viewModel.errorHandler = { [weak self] error in
+            let alert = UIAlertController(title: "Error", message: error.message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+                self?.dismiss(animated: true)
+            }))
+            self?.present(alert, animated: true)
+        }
+    }
+
     private func registerNib() {
         recipesTableView.registerCell(ofType: RecipesListTableViewCell.self)
     }
 
     private func getCellModel(atIndex index: Int) -> RecipeListItemModel? {
         viewModel.getRecipeModel(atIndex: index)
+    }
+
+    private func navigateToRecipeDetails(withId id: Int) {
+        guard let recipesViewController = UIStoryboard(name: "RecipeDetails", bundle: nil).instantiateViewController(withIdentifier: "RecipeDetailsViewController") as? RecipeDetailsViewController else { return }
+        recipesViewController.recipeId = id
+        navigationController?.pushViewController(recipesViewController, animated: true)
     }
 }
 
@@ -57,6 +74,7 @@ extension RecipesListViewController: UITableViewDataSource {
 
 extension RecipesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigateToRecipeDetails(withId: viewModel.getRecipeId(atIndex: indexPath.row))
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
