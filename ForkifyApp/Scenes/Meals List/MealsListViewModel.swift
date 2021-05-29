@@ -16,7 +16,7 @@ class MealsListViewModel {
     var fetchedMeals = [String]()
 
     func fetchMeals() {
-        if recentlySearchedMeals.count == 0 {
+        if recentlySearchedMeals.isEmpty {
             HTMLParser(link: "https://forkify-api.herokuapp.com/phrases.html", path: "/body/div/ul").parse(completion: { meals in
                 self.meals = meals
                 self.fetchedMeals = meals
@@ -36,8 +36,20 @@ class MealsListViewModel {
         meals[index]
     }
 
+
+    func clearCachedMeals() {
+        recentlySearchedMeals.removeAll()
+        fetchMeals()
+    }
+
     func filterMeals(withQuery query: String) {
+        recentlySearchedMeals.removeAll()
         meals = !query.isEmpty ? meals.filter { $0.contains(query) } : fetchedMeals
         reloadTableView?()
+    }
+
+    func getRecentSearches() {
+        recentlySearchedMeals = CoreDataHandler.shared.getAllSearchHistory().reversed()
+        fetchMeals()
     }
 }

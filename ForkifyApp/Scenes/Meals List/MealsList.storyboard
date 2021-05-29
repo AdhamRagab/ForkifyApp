@@ -43,7 +43,7 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="thz-pc-AbK">
+                                    <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thz-pc-AbK">
                                         <rect key="frame" x="5" y="0.0" width="404" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>

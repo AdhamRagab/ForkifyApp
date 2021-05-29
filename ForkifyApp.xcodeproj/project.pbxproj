@@ -60,6 +60,10 @@
 		BC267B7F266184BC004E2C08 /* RecipeDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B7D266184BC004E2C08 /* RecipeDetailsTableViewCell.swift */; };
 		BC267B80266184BC004E2C08 /* RecipeDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC267B7E266184BC004E2C08 /* RecipeDetailsTableViewCell.xib */; };
 		BC267B8826618AEA004E2C08 /* RecipeDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC267B8726618AEA004E2C08 /* RecipeDetailsData.swift */; };
+		BC5522CC2661D70F00DA30FF /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5522CB2661D70F00DA30FF /* CoreDataHandler.swift */; };
+		BC5522D42661D81F00DA30FF /* RecentSearches.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5522D32661D81F00DA30FF /* RecentSearches.swift */; };
+		BC5522D92661D86200DA30FF /* RecentSearchesProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5522D82661D86200DA30FF /* RecentSearchesProperties.swift */; };
+		BC5522DE2662B30F00DA30FF /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5522DD2662B30F00DA30FF /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +135,10 @@
 		BC267B7D266184BC004E2C08 /* RecipeDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		BC267B7E266184BC004E2C08 /* RecipeDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		BC267B8726618AEA004E2C08 /* RecipeDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsData.swift; sourceTree = "<group>"; };
+		BC5522CB2661D70F00DA30FF /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		BC5522D32661D81F00DA30FF /* RecentSearches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearches.swift; sourceTree = "<group>"; };
+		BC5522D82661D86200DA30FF /* RecentSearchesProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesProperties.swift; sourceTree = "<group>"; };
+		BC5522DD2662B30F00DA30FF /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,9 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				BC267B1126613542004E2C08 /* AppDelegates */,
-				BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */,
-				BC267AAC2661167E004E2C08 /* Enviroment.swift */,
 				BC267AB1266116AC004E2C08 /* PropertyListKeyValuePair.swift */,
+				BC267AAC2661167E004E2C08 /* Enviroment.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -332,6 +339,7 @@
 		BC267AF326611A28004E2C08 /* Data services */ = {
 			isa = PBXGroup;
 			children = (
+				BC5522CA2661D6FE00DA30FF /* CoreData */,
 				BC267AE7266119E1004E2C08 /* Networking */,
 			);
 			path = "Data services";
@@ -342,6 +350,7 @@
 			children = (
 				BC267AF926611E3F004E2C08 /* UITableViewExt.swift */,
 				BC267B07266123F6004E2C08 /* IndexPathExt.swift */,
+				BC5522DD2662B30F00DA30FF /* UIViewControllerExt.swift */,
 			);
 			path = "UIKit Extensions";
 			sourceTree = "<group>";
@@ -405,6 +414,17 @@
 				BC267B7E266184BC004E2C08 /* RecipeDetailsTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC5522CA2661D6FE00DA30FF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BC267A2B2660F2C0004E2C08 /* ForkifyApp.xcdatamodeld */,
+				BC5522CB2661D70F00DA30FF /* CoreDataHandler.swift */,
+				BC5522D32661D81F00DA30FF /* RecentSearches.swift */,
+				BC5522D82661D86200DA30FF /* RecentSearchesProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,10 +580,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC267B55266161A5004E2C08 /* MealsModel.swift in Sources */,
+				BC5522CC2661D70F00DA30FF /* CoreDataHandler.swift in Sources */,
 				BC267ADA26611945004E2C08 /* RecipesListViewController.swift in Sources */,
 				BC267AEF266119FE004E2C08 /* RecipesListApiClient.swift in Sources */,
 				BC267A7E26611399004E2C08 /* JSONEncoderExt.swift in Sources */,
 				BC267B1F26615746004E2C08 /* RecipesListTableViewCell.swift in Sources */,
+				BC5522D42661D81F00DA30FF /* RecentSearches.swift in Sources */,
 				BC267B3026615E3F004E2C08 /* HTMLParser.swift in Sources */,
 				BC267A6E2661128B004E2C08 /* ErrorModel.swift in Sources */,
 				BC267A78266112E3004E2C08 /* ForkifyError.swift in Sources */,
@@ -582,6 +604,7 @@
 				BC267AD226611925004E2C08 /* RecipesListModel.swift in Sources */,
 				BC267AEA266119F3004E2C08 /* RecipesListTarget.swift in Sources */,
 				BC267B782661808D004E2C08 /* RecipeDetailsModel.swift in Sources */,
+				BC5522D92661D86200DA30FF /* RecentSearchesProperties.swift in Sources */,
 				BC267A86266113D9004E2C08 /* JSONDecoderExt.swift in Sources */,
 				BC1E278226619AEB00A6594A /* StringExt.swift in Sources */,
 				BC267AB2266116AC004E2C08 /* PropertyListKeyValuePair.swift in Sources */,
@@ -591,6 +614,7 @@
 				BC267ACD2661191D004E2C08 /* RecipesListViewModel.swift in Sources */,
 				BC267A8D26611437004E2C08 /* TargetTypeExt.swift in Sources */,
 				BC267AAD2661167E004E2C08 /* Enviroment.swift in Sources */,
+				BC5522DE2662B30F00DA30FF /* UIViewControllerExt.swift in Sources */,
 				BC267B7326618078004E2C08 /* RecipeDetailsViewModel.swift in Sources */,
 				BC267B08266123F6004E2C08 /* IndexPathExt.swift in Sources */,
 				BC267B7F266184BC004E2C08 /* RecipeDetailsTableViewCell.swift in Sources */,
